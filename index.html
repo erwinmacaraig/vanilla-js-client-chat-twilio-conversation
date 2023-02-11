@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Twilio Client</title>
+		<!-- <script src="https://media.twiliocdn.com/sdk/js/conversations/releases/2.1.0/twilio-conversations.min.js" integrity="sha256-v2SFLWujVq0wnwHpcxct7bzTP8wII7sumEhAKMEqgHQ=" crossorigin="anonymous"></script> -->
+		<script src="https://media.twiliocdn.com/sdk/js/conversations/v2.2/twilio-conversations.min.js"></script>
+
+
+		<script src="./index.js"></script>
+		<link rel="stylesheet" href="./styles.css">
+	</head>
+	<body>
+		<h1>Test Twilio Chat</h1>
+		<div class="status-box"></div>
+		<div class="chat-window">
+			<div class="conversation-channels"></div>
+			<div class="selected-channel">
+				<div class="open-channel">
+					<ul id="messages"></ul>
+				</div>
+				<form onsubmit="sendMessage(event)" method="post">
+
+					<label htmlfor="message">Message:
+					</label>
+					<input type="text" name="message" id="type-a-message" autocomplete="off"/>
+
+					<button>Send</button>
+				</form>
+
+			</div>
+
+		</div>
+
+	</body>
+</html>
